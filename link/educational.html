@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="timeline-container">
+        <div class="timeline">
+          <div class="timeline-item" id="card1">
+            <!-- Card Content -->
+          </div>
+          <div class="timeline-item" id="card2">
+            <!-- Card Content -->
+          </div>
+          <div class="timeline-item" id="card3">
+            <!-- Card Content -->
+          </div>
+        </div>
+      </div>
+      
+<script>// Vanilla JS scroll animation
+   document.addEventListener('DOMContentLoaded', function () {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+
+  // Auto-tilt effect function
+  timelineItems.forEach((item, index) => {
+    let tiltX = 0;
+    let tiltY = 0;
+    let directionX = 1;
+    let directionY = 1;
+
+    function autoTilt() {
+      // Gradual tilt change
+      tiltX += directionX * 0.1;
+      tiltY += directionY * 0.1;
+
+      if (tiltX > 8 || tiltX < -8) directionX *= -1;
+      if (tiltY > 8 || tiltY < -8) directionY *= -1;
+
+      item.style.transform = `rotateX(${tiltY}deg) rotateY(${tiltX}deg)`;
+
+      requestAnimationFrame(autoTilt);
+    }
+
+    // Apply smooth appearance with delay for each card
+    setTimeout(() => {
+      item.style.opacity = '1';
+      item.style.transform = 'translateY(0) rotateX(0deg) rotateY(0deg)';
+    }, index * 300);
+
+    // Start auto tilt animation
+    autoTilt();
+  });
+});
+
+    </script>      
+      
+</body>
+</html>

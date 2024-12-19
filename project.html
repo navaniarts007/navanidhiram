@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navani-Portfolio</title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="prj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        class="stylesheet">
+
+</head>
+<style>
+    * {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">
+                    <img src="files/signaturecropped.png" alt="" class="signature">
+                    <i class="fa fa-bolt"></i>
+                </a>
+                </div>
+        </div>
+    </header>
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <div class="data-heading">Here is some of my work that I've done in various platforms</div>
+                    <h2>Latest Works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-filter">
+                    <span class="filter-item outer-shadow active" data-target="all">All</span>
+                    <span class="filter-item" data-target="web-application">Web application</span>
+                    <span class="filter-item" data-target="photoshop">photoshop</span>
+                    <span class="filter-item" data-target="mobile-app">mobile app</span>
+                    <span class="filter-item" data-target="e-commerce">e commerce</span>
+                </div>
+            </div>
+            <div class="row portfolio-items">
+                <div class="card" data-category="web-application">
+                    <img src="calc.png" alt="Project Icon" class="card__icon" />
+                    <div class="card__content">
+                        <p class="card__title">Calculator</p>
+                        <p class="card__description">Calculator i used to create only with HTML, CSS, JAVA SCRIPT.</p>
+                        <br>
+                        <a href="https://navani.neocities.org/CALC/CALC"  target="_blank" class="card__button">Live Demo</a>
+                        <a href="https://github.com/navaniarts007/calc.git"  target="_blank" class="card__button secondary">Source Code</a>
+
+                    </div>
+                </div>
+
+                <div class="card" data-category="web-application">
+                    <img src="stop.png" alt="Project Icon" class="card__icon" />
+                    <div class="card__content">
+                        <p class="card__title">Stop Watch</p>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <a href="https://navani.neocities.org/ST/Stop-watch"  target="_blank" class="card__button">Live Demo</a>
+                        <a href="https://github.com/navaniarts007/stop-watch.git"  target="_blank" class="card__button secondary">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="web-application">
+                  <img src="certificate/log.png" alt="Project Icon" class="card__icon" />
+                  <div class="card__content">
+                      <p class="card__title">Login Page</p>
+                      <p class="card__description">-</p>
+                      <a href="https://navani.neocities.org/new%20form/formm"  target="_blank" class="card__button">Live Demo</a>
+                      <a href="https://github.com/navaniarts007/login_form.git"  target="_blank" class="card__button secondary">Source Code</a>
+                  </div>
+              </div>
+
+                <div class="card" data-category="web-application">
+                  <img src="certificate/CHAT.png" alt="Project Icon" class="card__icon" />
+                  <div class="card__content">
+                      <p class="card__title">Chat Bot</p>
+                      <p class="card__description">.</p>
+                      <a href="https://navani.neocities.org/St%20Chatbot/"  target="_blank" class="card__button">Live Demo</a>
+                      <a href="https://github.com/navaniarts007/chat-bot.git"  target="_blank" class="card__button secondary">Source Code</a>
+                  </div>
+              </div>
+
+              <div class="card" data-category="web-application">
+                <img src="certificate/image.png" alt="Project Icon" class="card__icon" />
+                <div class="card__content">
+                    <p class="card__title">Blog</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <a href="https://navani.neocities.org/Blog/frontend/#"  target="_blank" class="card__button">Live Demo</a>
+                    <a href="https://github.com/navaniarts007/blog.git"  target="_blank" class="card__button secondary">Source Code</a>
+                </div>
+            </div>
+
+<style>/* Card Styles */
+  .card {
+      position: relative;
+      width: 350px; /* Adjust width as needed */
+      aspect-ratio: 16/9;
+      background-color: #fffca4ce;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      box-shadow: 0 0 0 5px #fed80090;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  /* ... other card styles ... */
+  
+  .card__button {
+      padding: 1px;
+      border-radius: 8px;
+      background: #777;
+      border: none;
+      color: white;
+      margin-right: 10px; 
+      cursor: pointer; 
+  }
+  
+  .card__button.secondary {
+      background: transparent;
+      color: #777;
+      border: 1px solid #777;
+  }
+  
+  /* Responsive Design for Buttons */
+  @media (max-width: 480px) {
+      .card__button {
+          padding: 5px; /* Reduce padding */
+          font-size: 10px; /* Slightly smaller font */
+          margin-right: 7px; /* Reduce margin */
+      }
+  
+      .card__button.secondary {
+          font-size: 14px; /* Match primary button font size */
+      }
+  
+      /* Stack buttons vertically if needed */
+      .card__content {
+          display: flex;
+          flex-direction: column; /* Align items vertically */
+          align-items: center; /* Center horizontally */
+      }
+  
+      .card__button {
+          margin-bottom: 10px; /* Add space between stacked buttons */
+          width: 80%; /* Make buttons take up more width */
+      }
+  }</style>
+<!--  <div class="card" data-category="mobile-app">
+                  <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Project Icon" class="card__icon" />
+                  <div class="card__content">
+                      <p class="card__title">Project Name 3</p>
+                      <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                      <button class="card__button">Live Demo</button>
+                      <button class="card__button secondary">Source Code</button>
+                  </div>
+              </div>
+
+              <div class="card" data-category="mobile-app">
+                <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Project Icon" class="card__icon" />
+                <div class="card__content">
+                    <p class="card__title">Project Name 3</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <button class="card__button">Live Demo</button>
+                    <button class="card__button secondary">Source Code</button>
+                </div>
+            </div>
+
+            <div class="card" data-category="mobile-app">
+              <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Project Icon" class="card__icon" />
+              <div class="card__content">
+                  <p class="card__title">Project Name 3</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  <button class="card__button">Live Demo</button>
+                  <button class="card__button secondary">Source Code</button>
+              </div>
+          </div> -->
+               
+
+                </div>
+            </div>
+    </section>
+    </div>
+ 
+
+
+    <div class="controls">
+        <button class="control active-btn" data-id="home">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </button>
+        <button class="control" data-id="about">
+            <a href="about.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </button>
+        <button class="control" data-id="education">
+            <a href="education.html">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+        </button>
+        <button class="control" data-id="projects">
+            <a href="project.html">
+                <i class="fas fa-briefcase"></i>
+            </a>
+        </button>
+        <a href="mailto:navanidharama@gmail.com">
+            <button class="control" data-id="contact">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+    </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <footer class="footer">
+        <small class="message">Thanks for visiting and happy coding!</small>
+        <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
+    </footer>
+
+    </style>
+</body>
+
+</html>

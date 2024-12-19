@@ -1,0 +1,156 @@
+/* Timeline container */
+.timeline-container {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 50px; /* space for the vertical line */
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 25px; /* Line Position */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #1e1e1e; /* Timeline color */
+}
+
+/* Timeline Card */
+.timeline-card {
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 1.5rem;
+  max-width: 320px;
+  margin-bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(50px); /* Slide-up effect */
+  transition: all 0.5s ease-out;
+}
+
+/* Timeline animation effect */
+.show-timeline {
+  opacity: 1;
+  transform: translateY(0); /* Slide back to original position */
+}
+
+/* Connector */
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -55px; /* Line connector */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #32cd32; /* Green */
+  box-shadow: 0 0 0 5px #1e1e1e; /* Create the effect of a circular connection */
+}
+
+/* Timeline Card Content */
+.timeline-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.timeline-card .institute-name {
+  font-size: 16px;
+  color: #1e90ff;
+  margin-top: 1rem;
+}
+
+.timeline-card .duration {
+  font-size: 12px;
+  color: #b0b0b0;
+  margin-top: 0.5rem;
+}
+
+.timeline-card .quote {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.timeline-card .degree {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.timeline-card .course {
+  font-size: 16px;
+  color: #ff69b4;
+  margin-top: 0.5rem;
+}
+
+.timeline-card .score {
+  font-size: 16px;
+  color: #32cd32;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .timeline-container {
+    padding-left: 20px;
+  }
+
+  .timeline-container::before {
+    left: 10px;
+  }
+
+  .timeline-card {
+    max-width: 100%;
+    margin-left: 20px;
+  }
+
+  .timeline-card::before {
+    left: -35px;
+  }
+}
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  width: 300px;
+  height: 400px;
+  background-color: #222;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Timeline line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #fff;
+  z-index: -1;
+}
