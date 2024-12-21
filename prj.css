@@ -6,17 +6,29 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    color: #d8d8d8;
-    line-height: 1.6;
+.Typewriter__cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 0.6s steps(2, start) infinite;
 }
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
 
 /* Portfolio Section */
 .portfolio-section {
     padding: 60px 0;
-    background-color: #202020;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #861717, #b561ff, #004281);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #861717, #311e42, #004281); 
     text-align: center;
 }
 
@@ -130,9 +142,10 @@ top: 0;
 left: 0;
 width: 100%;
 z-index: 99;
-background-color: #202020;
+background-color: #3a0a0a, #31213f, #012b52);;
 padding: 5px;
 }
+
 
 .header{
 display:flex;
@@ -158,7 +171,23 @@ left: 100%;
 transform: translate(-50%, -50%); 
 z-index: 1; 
 }
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .logo {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+
+    .logo .fa-bolt {
+        font-size: 16px; /* Adjust icon size for mobile */
+        top: 50%; /* Adjust position for mobile */
+        left: 90%; /* Adjust position for mobile */
+    }
+}
 .signature {
 width: 100px; 
 height:auto; 
