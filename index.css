@@ -47,7 +47,7 @@
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #202020;
+  background-color: #200520;
   padding: 5px;
 }
 
@@ -131,7 +131,7 @@
   border-radius: 50%;
   overflow: hidden;
   border: 15px solid #444444;
-  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
+  box-shadow: 5px 7px 25px rgba(255, 225, 0, 0.096)
 }
 profile-photo .img{
   height: 100%;
@@ -170,7 +170,7 @@ profile-photo .img{
 }
 
 .FirstElement{
-    padding-bottom: 50px; 
+    padding-bottom: 190px; 
 }
 
 
