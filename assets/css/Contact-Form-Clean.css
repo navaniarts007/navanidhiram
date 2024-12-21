@@ -1,0 +1,117 @@
+/* General layout */
+.contact-clean {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #3a0a0a, #31213f, #012b52);
+  border-radius: 12px;
+  flex-wrap: wrap;
+  color: #f1f1f1;
+}
+
+
+.contact-clean .contact-info {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-clean .contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-clean .contact-info .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-clean form {
+  width: 60%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.contact-clean h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffd500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contact-clean .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-clean .form-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact-clean .form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d0e0f1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-clean .form-control:focus {
+  border-color: #4b6cb7;
+  outline: none;
+}
+
+.www{
+  width: 100%;
+  padding: 100px;
+  border: 1px solid #d0e0f1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.contact-clean .form-group textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-clean .btn {
+  padding: 12px 24px;
+  background-color: #695804;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-clean .btn:hover {
+  background-color: #6b5a05;
+}
+
+@media (max-width: 768px) {
+  .contact-clean {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-clean .contact-info, .contact-clean form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .www{
+    width: 100%;
+    padding: 0px;
+    padding-top: 10%;
+    border: 1px solid #d0e0f1;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}
