@@ -21,7 +21,7 @@ html {
 }
 
 :root {
-  --color-primary: #202020;
+  --color-primary: #200520;
   --color-secondary: #fed700;
   --color-white: #FFFFFF;
   --color-black: #000;
@@ -228,6 +228,12 @@ body {
   .container {
     padding: 2rem 2.5rem !important;
   }
+  /* Mobile responsive styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 0rem 1rem !important; /* Adjust padding for mobile */
+  }
+}
 
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
@@ -333,7 +339,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #202020;
+  background-color: #200520;
   padding: 5px;
 }
 
@@ -401,7 +407,9 @@ body {
 
 .about-area{
   padding-top: 100px;
-  background-color: #202020;
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #861717, #31213f, #004281);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #861717, #311e42, #004281); 
 }
 .about{
   display: flex;
@@ -467,7 +475,7 @@ body {
 /*---------------------------Button---------------------------*/
 
 .btn-group{
-  margin: 45px 0;
+  margin: 10px 0;
 }
 .btn-group .btn{
   border-color: #d5d5d5;
